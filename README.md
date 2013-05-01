@@ -1,19 +1,21 @@
-# prez
+# Prez: Reveal.js Presentation Generator #
 
-FIXME
-
-## Prerequisites
-
-You will need [Leiningen][1] 1.7.0 or above installed.
-
-[1]: https://github.com/technomancy/leiningen
+Write Reveal.js presentations using Clojure. Supports a local web server, pre-parsing Markdown, and compiling presentations into standalone, offline-ready HTML files.
 
 ## Running
 
-To start a web server for the application, run:
+To create a single, standalone presentation file at `target/classes/public/index.html`, run:
 
-    lein ring server
+```
+lein run compile
+```
+
+During development, you can just run `prez.core/-main` without any arguments and start a local server like this:
+
+```
+lein ring server
+```
 
 ## License
 
-Copyright © 2013 FIXME
+Copyright © 2013 Daniel L. Gregoire
